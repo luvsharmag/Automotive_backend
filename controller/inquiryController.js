@@ -21,7 +21,7 @@ export const Inquiry = async (req, res) => {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "dealer@example.com",
+      to: email,
       subject: `New Inquiry: ${vehicle}`,
       text: `
         Name: ${name}
